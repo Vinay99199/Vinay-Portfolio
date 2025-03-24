@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vinay Jaiswal - Full Stack Developer Portfolio with Frontend, Backend & Data Analytics Expertise." />
+  <meta name="keywords" content="Full Stack Developer, Data Analyst, Frontend Backend Developer, Portfolio, Vinay Jaiswal" />
+  <meta name="author" content="Vinay Jaiswal" />
+  <title>Vinay Jaiswal | Full Stack Developer & Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Vinay <span>Jaiswal</span></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Dark Mode</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>Hello, I'm</p>
+      <h1>Vinay Jaiswal</h1>
+      <h2>Full Stack Developer & Data Analytics Enthusiast</h2>
+      <p>Expert in modern web technologies, building scalable systems, and driving business decisions with data insights.</p>
+      <div class="btn-container">
+        <button class="btn">Hire Me</button>
+        <button class="btn">View Projects</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="image/img.jpeg" alt="Profile Image" />
+    </div>
+  </section>
+  
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="image/circle img.jpg" alt="About Vinay Jaiswal">
+      <div>
+        <p>I am a result-driven developer and data analyst with a strong foundation in both frontend and backend technologies. With leadership qualities and project management experience, I help businesses scale through intelligent software solutions.</p>
+        <ul>
+          <li><strong>Experience:</strong> 5+ Years</li>
+          <li><strong>Domains:</strong> E-Commerce, Finance, HealthTech</li>
+          <li><strong>Tools:</strong> Git, Docker, VS Code, Postman</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <i class="fab fa-html5"></i><h3>HTML5</h3><p>Clean semantic structure</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-css3-alt"></i><h3>CSS3</h3><p>Responsive & UI Design</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-js"></i><h3>JavaScript</h3><p>Interactive Web Elements</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-react"></i><h3>React.js</h3><p>Component-based SPA</p>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-node"></i><h3>Node.js</h3><p>Backend APIs & Services</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-database"></i><h3>MongoDB / SQL</h3><p>Data Modeling</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-chart-line"></i><h3>Data Analytics</h3><p>Excel, Python, PowerBI</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-code"></i><h3>Python</h3><p>Backend Logic & Data Processing</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
+      <div class="project">
+        <h3>E-Commerce Website</h3>
+        <p>Full-stack shopping platform with user authentication, product filters, and cart system.</p>
+      </div>
+      <div class="project">
+        <h3>Hospital Management System</h3>
+        <p>Admin dashboard with patient records, doctor scheduling, and analytics reports.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Manager Dashboard</h3>
+        <p>Data-driven dashboard built using React & Chart.js for finance insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="analytics" class="analytics">
+    <h2>Data Analytics Projects</h2>
+    <div class="analytics-container">
+      <div class="analytics-card">
+        <h3>Sales Forecasting</h3>
+        <p>Time-series analysis using Python & Pandas</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Customer Segmentation</h3>
+        <p>K-Means clustering on customer behavior data</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Market Basket Analysis</h3>
+        <p>Apriori algorithm for recommendation engine</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's Connect</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Vinay Jaiswal. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html> 

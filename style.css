@@ -1,0 +1,379 @@
+/* Updated and Modern CSS for Portfolio Website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #111;
+    text-decoration: none;
+  }
+  .logo span {
+    color: #0c84f3;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #0c84f3;
+  }
+  
+  #theme-toggle {
+    padding: 8px 16px;
+    border: none;
+    background: #0c84f3;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    background: #066dc4;
+  }
+  
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #e6f2ff, #f8fbff);
+    flex-wrap: wrap;
+    border-bottom: 2px solid #dbeafe;
+  }
+  
+  .hero-text {
+    flex: 1;
+    max-width: 650px;
+    color: #111;
+  }
+  
+  .hero-text p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 12px;
+  }
+  
+  .hero-text h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+  }
+  
+  .hero-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0099ff;
+    margin-bottom: 28px;
+  }
+  
+  .hero-text .description {
+    font-size: 19px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 35px;
+  }
+  
+  .hero-text .description::before {
+    content: "🚀 ";
+    font-size: 20px;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  
+  .btn {
+    padding: 14px 36px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Hero Image - Improved */
+  .hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-img img {
+    max-width: 420px;
+    width: 100%;
+    height:500px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease-in-out;
+  }
+  
+  .hero-img img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero {
+      padding: 80px 8%;
+      gap: 40px;
+    }
+  
+    .hero-text h1 {
+      font-size: 52px;
+    }
+  
+    .hero-text h2 {
+      font-size: 26px;
+    }
+  
+    .hero-img img {
+      max-width: 360px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 5%;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-text h1 {
+      font-size: 42px;
+    }
+  
+    .hero-text h2 {
+      font-size: 22px;
+    }
+  
+    .hero-text p,
+    .hero-text .description {
+      font-size: 17px;
+    }
+  
+    .btn {
+      width: 100%;
+      max-width: 220px;
+      justify-content: center;
+    }
+  
+    .hero-img {
+      margin-top: 30px;
+    }
+  
+    .hero-img img {
+      max-width: 320px;
+      border-radius: 16px;
+    }
+  }
+  
+  
+  /* about */
+  .about, .skills, .projects, .analytics, .contact {
+    padding: 80px 60px;
+    background-color: #fff;
+  }
+  
+  .about h2, .skills h2, .projects h2, .analytics h2, .contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #111;
+    border-left: 5px solid #0c84f3;
+    padding-left: 12px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .about-container img {
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container div {
+    max-width: 600px;
+  }
+  
+  .about-container ul li {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .skill-box {
+    background: #f1faff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .skill-box i {
+    font-size: 30px;
+    color: #0c84f3;
+    margin-bottom: 10px;
+  }
+  
+  .projects .project-cards, .analytics .analytics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .project, .analytics-card {
+    flex: 1 1 280px;
+    background: #fefefe;
+    padding: 20px;
+    border-left: 5px solid #0c84f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .contact button {
+    background: #0c84f3;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact button:hover {
+    background: #066dc4;
+  }
+  
+  footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  footer .socials {
+    margin-top: 10px;
+  }
+  
+  footer .socials a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  footer .socials a:hover {
+    color: #0c84f3;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 15px 30px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 30px;
+    }
+  
+    .hero-img img {
+      margin-top: 30px;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .skills-grid, .projects .project-cards, .analytics .analytics-container {
+      flex-direction: column;
+    }
+  }
